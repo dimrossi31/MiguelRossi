@@ -9,13 +9,14 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-                        url('https://www.exemplo.com/sua-imagem-de-fundo.jpg') no-repeat center center fixed;
+            /* Caminho para uma imagem online */
+            background-image: url('https://guiadoestudante.abril.com.br/wp-content/uploads/sites/4/2021/04/Curso-online.jpg?quality=100&strip=info&resize=680'); /* Link da imagem online */
             background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             color: #fff;
         }
         h1 {
-            color: #f8f9fa;
             text-align: center;
             margin-top: 20%;
             font-size: 3em;
@@ -23,14 +24,13 @@
         }
         p {
             text-align: center;
-            margin-top: 20px;
         }
         a {
             text-decoration: none;
             color: #f8d142;
             font-size: 1.5em;
             padding: 10px 20px;
-            background-color: rgb(138, 142, 139);
+            background-color: rgba(255, 255, 255, 0.2);
             border-radius: 5px;
             transition: background-color 0.3s ease, color 0.3s ease;
         }
