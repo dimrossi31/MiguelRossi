@@ -10,7 +10,7 @@ def homepage():
 # Rota para a página de músicas
 @app.route("/Musicas")
 def musicas():
-    return render_template("musicas.html")
+    return render_template("Musicas.html")
 
 # Rota para a cifra da música Bondade de Deus
 @app.route("/Musicas/BondadeDeDeus")
