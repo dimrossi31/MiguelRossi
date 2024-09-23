@@ -1,36 +1,73 @@
-from flask import Flask, render_template
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - Reginaldo Rossi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://guiadoestudante.abril.com.br/wp-content/uploads/sites/4/2021/04/Curso-online.jpg?quality=100&strip=info&resize=680');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20%;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        p {
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(208, 14, 14);
+            font-size: 1.5em;
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        a:hover {
+            background-color: #f842da;
+            color: #333;
+        }
+        form {
+            text-align: center;
+            margin: 20px 0;
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>Página de Reginaldo Rossi</h1>
+    <p><a href="/Musicas">Elaboração de Músicas Cifradas</a></p>
 
-app = Flask(__name__)
-
-# Rota para a homepage
-@app.route("/")
-def homepage():
-    return render_template("homepage.html")
-
-# Rota para a página de músicas
-@app.route("/Musicas")
-def musicas():
-    return render_template("Musicas.html")
-
-# Rota para a cifra da música Bondade de Deus
-@app.route("/Musicas/BondadeDeDeus")
-def bondade_de_deus():
-    return render_template("bondade_de_deus.html")
-
-# Rota para a cifra da música Boa Parte
-@app.route("/Musicas/BoaParte")
-def boa_parte():
-    return render_template("boa_parte.html")
-
-# Rota para a cifra da música Rompendo em Fé
-@app.route("/Musicas/RompendoEmFe")
-def rompendo_em_fe():
-    return render_template("rompendo_em_fe.html")
-
-# Rota para a cifra da música Te Agradeço
-@app.route("/Musicas/TeAgradeco")
-def te_agradeco():
-    return render_template("te_agradeco.html")
-
-if __name__ == "__main__":
-    app.run(debug=True)
+    <!-- Formulário de pesquisa -->
+    <form action="https://www.google.com/search" method="get">
+        <input type="text" name="q" placeholder="Pesquisar no Google" required>
+        <button type="submit">Pesquisar</button>
+    </form>
+</body>
+</html>
