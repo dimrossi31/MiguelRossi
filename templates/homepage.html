@@ -9,8 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            /* Caminho para uma imagem online */
-            background-image: url('https://guiadoestudante.abril.com.br/wp-content/uploads/sites/4/2021/04/Curso-online.jpg?quality=100&strip=info&resize=680'); /* Link da imagem online */
+            background-image: url('https://guiadoestudante.abril.com.br/wp-content/uploads/sites/4/2021/04/Curso-online.jpg?quality=100&strip=info&resize=680');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -27,7 +26,7 @@
         }
         a {
             text-decoration: none;
-            color: #f8d142;
+            color: rgb(208, 14, 14);
             font-size: 1.5em;
             padding: 10px 20px;
             background-color: rgba(255, 255, 255, 0.2);
@@ -35,13 +34,40 @@
             transition: background-color 0.3s ease, color 0.3s ease;
         }
         a:hover {
-            background-color: #f8d142;
+            background-color: #f842da;
             color: #333;
+        }
+        form {
+            text-align: center;
+            margin: 20px 0;
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
         }
     </style>
 </head>
 <body>
     <h1>Página de Reginaldo Rossi</h1>
     <p><a href="/Musicas">Elaboração de Músicas Cifradas</a></p>
+
+    <!-- Formulário de pesquisa -->
+    <form action="https://www.google.com/search" method="get">
+        <input type="text" name="q" placeholder="Pesquisar no Google" required>
+        <button type="submit">Pesquisar</button>
+    </form>
 </body>
 </html>
